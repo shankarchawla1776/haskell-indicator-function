@@ -8,8 +8,6 @@ This function is applied to each number in $C_i$. This results in the formation 
 
 Each binary string $S_i$ can be translated into a decimal $D_i$ expressed by 
 
-$
-D_i = \sum_{|C_i|}_{j=0} s_{i,j} \cdot 2^{|C_i|-1-j}
-$
+$D_i = \sum_{|C_i|}_{j=0} s_{i,j} \cdot 2^{|C_i|-1-j}$
 
 For each $C_i$ a function is defined as $g: \mathbb{Z}^{|C_i} \cdot \mathbb{Z} \rightarrow \mathbb{Z}^{|C_i|'}$. All $C_i$ chunks are then processed by computing $g(C_i, D_i)$ where the first occurence of $0$ is in $C_i$ is replaced with $D_i$ and all other zeros are omitted.  
