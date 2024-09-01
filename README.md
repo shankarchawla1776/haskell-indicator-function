@@ -6,6 +6,6 @@ Given a block (a list object) of size $S$, we chunk $S$ into $n$ chunks ($C_1, C
 
 This function is applied to each number in $C_i$. This results in the formation of binary string $S_i = f(C_{i,1}), f(C_{i,2}), ..., f(C_{i,|C_i|})$. Where $f(x) = 1$ is $x \neq 0$ and 0 if $x=0$.   
 
-Each binary string $S_i$ can be translated into a decimal $D_i$ expressed by $D_i = \sum_{|C_i|}_{j=0} s_{i,j} \cdot 2^{|C_i|-1-j}$.
+Each binary string $S_i$ can be translated into a decimal $D_i$ expressed by $D_i = \sum^{|C_i|}_{j=0} s_{i,j} \cdot 2^{|C_i|-1-j}$.
 
 For each $C_i$ a function is defined as $g: \mathbb{Z}^{|C_i} \cdot \mathbb{Z} \rightarrow \mathbb{Z}^{|C_i|'}$. All $C_i$ chunks are then processed by computing $g(C_i, D_i)$ where the first occurence of $0$ is in $C_i$ is replaced with $D_i$ and all other zeros are omitted.  
